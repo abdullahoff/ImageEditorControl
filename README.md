@@ -7,7 +7,7 @@
 
 Lightweight UI control for WPF applications offering image markup capabilities. 
 
-![alt text](https://github.com/abdullahoff/ImageEditorControl/blob/main/EditorExample.jpg?raw=true)
+![alt text](https://github.com/abdullahoff/ImageEditorControl/blob/main/ImageEditorExample.JPG?raw=true)
 
 ## Getting Started
 
