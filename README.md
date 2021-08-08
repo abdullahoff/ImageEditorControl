@@ -12,6 +12,17 @@ Lightweight UI control for WPF applications offering image markup capabilities.
 
 ## Getting Started
 
+
+
+
+```XAML
+<Window x:Class="WpfApp1.MainWindow" xmlns:editor="clr-namespace:ImageEditor;assembly=ImageEditor">
+```
+
+```XAML
+  <editor:UserControl1 x:Name="imgEditor"/>
+```
+
 ## Features
 
 ## Demo
