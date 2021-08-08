@@ -1,5 +1,6 @@
 # ImageEditorControl
-![example workflow](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
+
+![License](https://img.shields.io/github/license/abdullahoff/ImageEditorControl)
 
 Lightweight UI control for WPF applications offering image markup capabilities. 
 
