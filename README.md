@@ -7,22 +7,28 @@
 
 Lightweight UI control for WPF applications offering image markup capabilities. 
 
-## What's Included 
-
-
 ## Getting Started
 
-
-
-
+1. Reference ImageEditor UI control via [Nuget](https://www.nuget.org/packages/ImageEditor/) or by manual download. Currently it requires at least .NET frammework 4.5 or .NET Core 3.0
+2. Once installed via package manager, add assembly reference in the window where the control will be implemented in
 ```XAML
 <Window x:Class="WpfApp1.MainWindow" xmlns:editor="clr-namespace:ImageEditor;assembly=ImageEditor">
 ```
-
+3. Add the following XAML tag to initalize the Image Editor 
 ```XAML
   <editor:UserControl1 x:Name="imgEditor"/>
 ```
 
 ## Features
+* Highlighting
+* Text
+* Paint Brush
+* Geometric shapes
+* Pencil
+* Undo
+* Resize
+* Pan and Zoom
 
 ## Demo
+
+Please clone the repository and then build the project called ImageEditorProject
