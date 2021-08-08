@@ -1,0 +1,172 @@
+﻿<UserControl x:Class="ImageEditor.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ImageEditor"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition  Width="50"/>
+                <ColumnDefinition  Width="50"/>
+                <ColumnDefinition  Width="50"/>
+                <ColumnDefinition  Width="50"/>
+                <ColumnDefinition/>
+                <ColumnDefinition  Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <ComboBox Name="Colors" Grid.Column="0"  HorizontalAlignment="Center"  Grid.Row="0"   Width="40" Height="40">
+                <ComboBoxItem Content="Y"></ComboBoxItem>
+                <ComboBoxItem Content="P"></ComboBoxItem>
+            </ComboBox>
+
+
+
+
+            <Button  Background="LightGray"  Foreground="White"  Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Upload_Image" ToolTip="Upload Image">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/upload.png"/>
+                </DockPanel>
+            </Button>
+
+            <Button   Background="LightGray" Foreground="White"  Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Save_Image" ToolTip="Save">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/diskette (1).png"/>
+                </DockPanel>
+            </Button>
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="3" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Pencil" ToolTip="Pencil">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/specialist.png"/>
+                </DockPanel>
+            </Button>
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="4" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Brush" ToolTip="Brush">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/paint-brush.png"/>
+                </DockPanel>
+            </Button>
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="5" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Text" ToolTip="Text">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/font.png"/>
+                </DockPanel>
+            </Button>
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="6" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Pan" ToolTip="Move">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/move.png"/>
+                </DockPanel>
+            </Button>
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="7" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Highlight" ToolTip="Highlighter">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/highlighter.png"/>
+                </DockPanel>
+            </Button>
+
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="8" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Rectangle" ToolTip="Rectangle">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/shapes.png"/>
+                </DockPanel>
+            </Button>
+
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="10" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_RemoveEdits" ToolTip="Undo">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/arrow-circle.png"/>
+                </DockPanel>
+            </Button>
+
+        </Grid>
+        <Grid Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Name="percentage" Grid.Row="0" Grid.Column="5"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Slider Name="ZoomAmount" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" Maximum="400"  ValueChanged="Slider_move"/>
+
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="4" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Zoom" ToolTip="Zoom In">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/add.png"/>
+                </DockPanel>
+            </Button>
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_ZoomOut" ToolTip="Zoom Out">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/minus.png"/>
+                </DockPanel>
+            </Button>
+            <Button  Background="LightGray" Foreground="White"  Grid.Column="1" HorizontalAlignment="Center"  Grid.Row="0" VerticalAlignment="Center" Width="40" Height="40" Click="Click_Reset" ToolTip="Reset">
+                <DockPanel>
+                    <Image Width="25" Height="25" Source="/Assets/switch-to-full-screen-button.png"/>
+                </DockPanel>
+            </Button>
+
+        </Grid>
+
+
+        <local:ZoomBorder x:Name="border" ClipToBounds="True"  Background="White" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="7" >
+            <Grid Name="Component">
+                <Image Name="Back" HorizontalAlignment="Center"/>
+                <Canvas Name="Drawing" HorizontalAlignment="Center" MouseDown="CanvasMouseDown" MouseMove="CanvasMouseMove" MouseUp="Canvas_MouseUp">
+                    <Canvas.Background>
+                        <SolidColorBrush Color="White" Opacity="0"/>
+                    </Canvas.Background>
+                </Canvas>
+            </Grid>
+        </local:ZoomBorder>
+
+
+
+
+        <Grid Name="Brush"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+
+            </Grid.RowDefinitions>
+            <!--<ComboBox Name="FontSize">
+                <ComboBoxItem Content="1"></ComboBoxItem>
+                <ComboBoxItem Content="2"></ComboBoxItem>
+                <ComboBoxItem Content="3"></ComboBoxItem>
+                <ComboBoxItem Content="4"></ComboBoxItem>
+                <ComboBoxItem Content="5"></ComboBoxItem>
+                <ComboBoxItem Content="6"></ComboBoxItem>
+                <ComboBoxItem Content="7"></ComboBoxItem>
+                <ComboBoxItem Content="8"></ComboBoxItem>
+                <ComboBoxItem Content="9"></ComboBoxItem>
+            </ComboBox >-->
+        </Grid>
+
+    </Grid>
+</UserControl>

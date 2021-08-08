@@ -1,0 +1,13 @@
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\bin\Debug\ImageEditor.dll
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\bin\Debug\ImageEditor.pdb
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\UserControl1.g.cs
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor_MarkupCompile.cache
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor_MarkupCompile.lref
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\UserControl1.baml
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor.g.resources
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor.Properties.Resources.resources
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor.csproj.GenerateResource.cache
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor.csproj.CoreCompileInputs.cache
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor.dll
+C:\Users\abdullah\AppData\Roaming\SPB_Data\ImageEditorControl\ImageEditor\obj\Debug\ImageEditor.pdb
