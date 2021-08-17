@@ -12,7 +12,7 @@ Lightweight UI control for WPF applications offering image markup capabilities.
 ## Getting Started
 
 1. Reference ImageEditor UI control via [Nuget](https://www.nuget.org/packages/ImageEditor/) or by manual download. Currently it requires at least .NET frammework 4.5 or .NET Core 3.0
-2. Once installed via package manager, add assembly reference in the window where the control will be implemented in
+2. Once installed via package manager, add assembly reference in the window where the control will be implemented
 ```XAML
 <Window x:Class="WpfApp1.MainWindow" xmlns:editor="clr-namespace:ImageEditor;assembly=ImageEditor">
 ```
